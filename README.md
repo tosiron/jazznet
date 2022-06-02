@@ -35,6 +35,7 @@ To make the downloads tractable, the data are broken down into multiple tarballs
 * Subsets Info
 
 ### NPZ files (for type and mode prediction using the subsets)
+The NPZ arrays contain the mel-spectogram features.
 * Type small
 * Type medium
 * Mode small
