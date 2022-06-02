@@ -3,6 +3,10 @@ The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840
 ![image](https://user-images.githubusercontent.com/16122125/171737773-beefb793-0653-4d30-8c7b-179db3eb73b3.png)
 
 ## Data
+
+The table below depicts the statistics of the dataset.  
+![image](https://user-images.githubusercontent.com/16122125/171740900-dcdb079c-5d48-4f2e-84de-f6aecb5e16a5.png)
+
 To make the downloads tractable, the data are broken down into multiple tarballs and NPZ subsets.
 
 ### WAV files
