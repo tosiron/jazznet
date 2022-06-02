@@ -14,7 +14,7 @@ To make the downloads tractable, the data are broken down into multiple tarballs
 * [Arpeggios](https://tosiron.com/jazznet/dataset/wav/arpeggios.tar.gz) (~2GB)
 * [Scales](https://tosiron.com/jazznet/dataset/wav/scales.tar.gz) (~3.7GB)
 * Progressions (ranging from 12.4GB to 35.7GB): Due to the size, the progressions are broken down into 9 downloads featuring the 9 chord progressions.
-  * I-i#-ii-V
+  * I-i#-ii-V (~20GB)
   * ii#-V#-ii-V
   * iii-IV-ii-V
   * ii-IV-I-maj
