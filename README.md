@@ -10,19 +10,20 @@ The table below depicts the statistics of the dataset.
 To make the downloads tractable, the data are broken down into multiple tarballs and NPZ subsets.
 
 ### WAV files
-* [Chords](https://tosiron.com/jazznet/dataset/wav/chords.tar.gz) (~1GB)
-* [Arpeggios](https://tosiron.com/jazznet/dataset/wav/arpeggios.tar.gz) (~2GB)
-* [Scales](https://tosiron.com/jazznet/dataset/wav/scales.tar.gz) (~3.7GB)
-* Progressions (ranging from 12.4GB to 35.7GB): Due to the size, the progressions are broken down into 9 downloads featuring the 9 chord progressions.
-  * I-i#-ii-V (~20GB)
-  * ii#-V#-ii-V
-  * iii-IV-ii-V
-  * ii-IV-I-maj
-  * ii-IV-i-min
-  * ii-triV-I
-  * I-IV7-iii-VI7
-  * I-VI-ii-V-maj
-  * i-vi-ii-V-min
+All sizes are the compressed data sizes.
+* [Chords](https://tosiron.com/jazznet/dataset/wav/chords.tar.gz) (1GB)
+* [Arpeggios](https://tosiron.com/jazznet/dataset/wav/arpeggios.tar.gz) (2GB)
+* [Scales](https://tosiron.com/jazznet/dataset/wav/scales.tar.gz) (4GB)
+* Progressions: Due to the size, the progressions are broken down into 9 downloads featuring the 9 chord progressions.
+  * I-i#-ii-V (20GB)
+  * ii#-V#-ii-V (20GB)
+  * iii-IV-ii-V (10GB)
+  * ii-IV-I-maj (6GB)
+  * ii-IV-i-min (6GB)
+  * ii-triV-I (6GB)
+  * I-IV7-iii-VI7 (20GB)
+  * I-VI-ii-V-maj (20GB)
+  * i-vi-ii-V-min (20GB)
 
 ### MIDI files
 * All patterns
@@ -38,6 +39,7 @@ To make the downloads tractable, the data are broken down into multiple tarballs
 The NPZ arrays contain the mel-spectogram features.
 * Type small
 * Type medium
+* Type large
 * Mode small
 * Mode medium
 * Mode large
