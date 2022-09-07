@@ -8,7 +8,7 @@ The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840
 ## Why the dataset was created
 The dataset is created for machine learning research in music information retrieval (MIR). In general, datasets in the music arena seem to lag datasets in other areas like image recognition. So, given that I love music and think machine learning is interesting, and I had gotten tenure (i.e., I could do stuff that I found interesting without the pressure of getting it published in a conference/journal), I wondered if I could contribute to the body of data for MIR ML research. The truth is I don't know if anyone will care about this dataset (I hope it makes an impact!). But I really don't care either. I had fun doing it, and that's all that matters.
 
-I decided to submit the paper to [NeurIPS 2022 Track on Datasets and Benchmarks](https://neurips.cc/Conferences/2022/CallForDatasetsBenchmarks) and it got accepted in spite of Reviewer #3 (I call him--the review sounded like a him--Reviewer #3 because he scored the paper a 3 "Clear Reject").
+I decided to submit the paper to [NeurIPS 2022 Track on Datasets and Benchmarks](https://neurips.cc/Conferences/2022/CallForDatasetsBenchmarks) and it got accepted in spite of Reviewer #3 (I call him--it sounded like a him--Reviewer #3 because he scored the paper a 3 "Clear Reject").
 
 The general motivation behind the dataset is simple: if you want to learn jazz piano music, you could listen to jazz music and try to replicate it. Or you could learn the fundamentals of jazz piano music (chords, scales, arpeggios, chord progressions) and build on the fundamentals--this would be a more effective way to learn. So, the dataset contains several automatically generated "fundamental jazz piano patterns". 
 
