@@ -1,7 +1,9 @@
 # jazzNet Dataset
 ![image](https://user-images.githubusercontent.com/16122125/184457848-15a2bb14-e5b1-4cef-a7f3-64e93792dd31.png)
 
-The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
+The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. Details and description of the dataset and labels can be found in the following paper:
+
+
 
 ![image](https://user-images.githubusercontent.com/16122125/184457882-e0fe1121-8e34-4d71-bb8e-697a8c81ac15.png)
 
@@ -49,4 +51,16 @@ All sizes are the compressed data sizes.
 
 ### NPZ files (for type and mode prediction using the subsets)
 * [NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
+
+### Citing jazzNet
+If you use the jazzNet dataset (or the accompanying paper) in your work, we would appreciate references to the following paper:
+
+##### *jazzNet: An Open-Source Dataset of Fundamental Piano Patterns for Machine Learning Research in Music* Tosiron Adegbija (2022)
+
+#### BibTeX citation
+
+### License
+The project is licensed under the [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt).
+
+
 
