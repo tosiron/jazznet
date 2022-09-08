@@ -60,7 +60,7 @@ If you use the jazzNet dataset (or the accompanying paper) in your work, we woul
 #### BibTeX citation
 
 ### License
-The project is licensed under the [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt).
+The project is licensed under the [MIT license](LICENSE).
 
 
 
