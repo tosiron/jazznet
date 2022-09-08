@@ -55,7 +55,7 @@ All sizes are the compressed data sizes.
 ### Citing jazzNet
 If you use the jazzNet dataset (or the accompanying paper) in your work, we would appreciate references to the following paper:
 
-##### *jazzNet: An Open-Source Dataset of Fundamental Piano Patterns for Machine Learning Research in Music* Tosiron Adegbija (2022)
+##### *jazzNet: An Open-Source Dataset of Fundamental Piano Patterns for Machine Learning Research in Music*, Tosiron Adegbija (2022)
 
 #### BibTeX citation
 
