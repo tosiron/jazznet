@@ -18,7 +18,7 @@ The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840
 ![image](https://user-images.githubusercontent.com/16122125/184457882-e0fe1121-8e34-4d71-bb8e-697a8c81ac15.png)
 
 ## Why the dataset was created
-The dataset is created for machine learning research in music information retrieval (MIR). In general, datasets in the music arena seem to lag datasets in other areas like image recognition. So, given that I love music and think machine learning is interesting, and I had gotten tenure (i.e., I could do stuff that I found interesting without the pressure of getting it published in a conference/journal), I wondered if I could contribute to the body of data for MIR ML research. The truth is I don't know if anyone will care about this dataset (I hope it makes an impact!). But I really don't care either. I had fun doing it, and that's all that matters.
+The dataset is created for machine learning research in music information retrieval (MIR). In general, datasets in the music arena seem to lag datasets in other areas like image recognition. So, given that I love music and think machine learning is interesting, and I had gotten tenure (i.e., I could do stuff that I found interesting without the pressure of getting it published in a conference/journal), I wondered if I could contribute to the body of data for MIR ML research. The truth is I don't know if anyone will care about this dataset (I hope it makes an impact!). But I really don't care either. I had fun doing it, and that's what matters most.
 
 I decided to submit the paper to [NeurIPS 2022 Track on Datasets and Benchmarks](https://neurips.cc/Conferences/2022/CallForDatasetsBenchmarks) and it got accepted in spite of Reviewer #3 (I call him--it sounded like a him--Reviewer #3 because he scored the paper a 3 "Clear Reject").
 
@@ -34,7 +34,9 @@ I imagine it would be a challenging dataset for a variety of ML tasks. You can a
 The table below depicts the statistics of the dataset.  
 ![image](https://user-images.githubusercontent.com/16122125/171740900-dcdb079c-5d48-4f2e-84de-f6aecb5e16a5.png)
 
-To make the downloads managable, the data are broken down into multiple tarballs.
+To make the downloads managable, the data are broken down into multiple tarballs if you want to download individual components.
+
+To download everything, use the `download.py` file.
 
 ### Metadata
 * [All labels](https://tosiron.com/jazznet/dataset/metadata.tar.gz) (2MB)
@@ -59,7 +61,9 @@ All sizes are the compressed data sizes.
   * [ii#-V#-ii-V](https://tosiron.com/jazznet/dataset/wav/progressions/iis-Vs-ii-V.tar.gz) (20GB)
 
 ### NPZ files (for type and mode prediction using the subsets)
-* [NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
+* [Small NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
+* [Medium NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
+* [Large NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
 
 ### Sample uses
 
