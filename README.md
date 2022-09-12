@@ -82,7 +82,7 @@ If you use the jazzNet dataset (or the accompanying paper) in your work, we woul
 ```
 
 ### License
-The project is licensed under the [MIT license](LICENSE).
+The project is licensed under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 
 
