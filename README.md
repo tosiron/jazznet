@@ -65,6 +65,13 @@ All sizes are the compressed data sizes.
 
 ### Sample uses
 
+### Generate new patterns
+You can use the provided Python scripts to generate MIDI files for new patterns and then convert them to WAV files. You will need [MIDI Util](https://pypi.org/project/MIDIUtil/), which can be installed using pip:
+
+```
+pip install MIDIUtil
+```
+
 ### Citing jazzNet
 If you use the jazzNet dataset (or the accompanying paper) in your work, we would appreciate references to the following paper:
 
