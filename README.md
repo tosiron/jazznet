@@ -72,13 +72,15 @@ You can use the provided Python scripts to generate MIDI files for new patterns 
 pip install MIDIUtil
 ```
 
-You can then generate patterns by specifying the patterns and rules. For instance, to generate the major chord in all keys of the standard 88-key piano, you would use the generateChords.py script as follows:
+You can then generate patterns by specifying the patterns and rules using the `generateChords.py`, `generateScales.py`, and `generateProgressions.py` files. Each file takes in a few arguments to determine the kind of pattern and how to define the patterns. For instance, to generate the major chord in all keys of the standard 88-key piano, you would use the generateChords.py script as follows:
 
 ```
 python generateChords.py triad 4 3 chord maj
 ```
 
-where "triad" is the kind of chord (there are three options: "dyad", "triad", and "tetrad") and 4 is the distance from the root note; 3 is the distance from the second note, "maj" is the name given to the chord appended to the filenames.
+where "triad" is the kind of chord and 4 is the distance (in semitones) from the root note; 3 is the distance from the second note, "maj" is the name given to the chord appended to the filenames.
+
+Details can be found in the Generate Patterns folder.
 
 ### Citing jazzNet
 If you use the jazzNet dataset (or the accompanying paper) in your work, we would appreciate references to the following paper:
