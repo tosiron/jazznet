@@ -33,3 +33,13 @@ python generateChord.py 2 2 1 2 2 2 ionian
 ``
 
 ### Generate progressions
+
+Progressions can be generated using the `generateProgressions.py` file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Chords can also be altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. 
+
+**Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7
+
+``
+python generateProgression.py ii,7b5-V-I,maj7
+``
+
+Current supported alterations are: "7" (seventh); "maj7"; "7b5" (seventh flat 5; usually used with minor chords)
