@@ -15,7 +15,7 @@ Name: A short descriptive name must be provided (e.g., `maj` or `min7b5`)
 **Example**: Generate the min7b5 chord in all keys
 
 ``
-python generateChord.py tetrad 3 3 3 arpeggio min7b5
+python generateChords.py tetrad 3 3 3 arpeggio min7b5
 ``
 
 ### Generate scales
@@ -29,17 +29,27 @@ Name: A short descriptive name.
 **Example**: Generate the Ionian mode in all keys
 
 ``
-python generateChord.py 2 2 1 2 2 2 ionian
+python generateScales.py 2 2 1 2 2 2 ionian
 ``
 
 ### Generate progressions
 
-Progressions can be generated using the `generateProgressions.py` file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any alterations, basic triads are generated. Chords can also be altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. 
+Progressions can be generated using the `generateProgressions.py` file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any extentions/alterations, basic triads are generated. Chords can also be extended or altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. 
 
 **Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7
 
 ``
-python generateProgression.py ii,7b5-V-I,maj7
+python generateProgressions.py ii,7b5-V-I,maj7
 ``
 
-Current supported alterations are: "7" (seventh); "maj7"; "7b5" (seventh flat 5; usually used with minor chords)
+The table below shows the currently supported extensions/alterations.
+
+| Alteration        | Description | 
+| ------------- |:-------------:| 
+| 7      | Dominant seventh | 
+| 7b5      | Seventh flat 5      | 
+| 7#5 | Seventh sharp 5      | 
+| maj7 | Major seventh |
+| maj7b5 | Major seventh flat 5 |
+| maj7#5 | Major seventh sharp 5 |
+
