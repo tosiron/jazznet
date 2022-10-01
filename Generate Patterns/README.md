@@ -15,7 +15,7 @@ Name: A short descriptive name must be provided (e.g., `maj` or `min7b5`)
 **Example**: Generate the min7b5 chord in all keys
 
 ``
-python generateChords.py tetrad 3 3 3 arpeggio min7b5
+python generateChords.py tetrad 3 3 4 arpeggio min7b5
 ``
 
 ### Generate scales
