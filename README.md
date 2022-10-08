@@ -32,7 +32,7 @@ I imagine it would be a challenging dataset for a variety of ML tasks. You can a
 ## Download the data
 
 The table below depicts the statistics of the dataset.  
-![image](https://user-images.githubusercontent.com/16122125/171740900-dcdb079c-5d48-4f2e-84de-f6aecb5e16a5.png)
+![image](https://user-images.githubusercontent.com/16122125/194719015-a12f6732-7421-4eec-a06d-46fc645415f1.png)
 
 To make the downloads managable, the data are broken down into multiple tarballs if you want to download individual components.
 
