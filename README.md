@@ -5,15 +5,14 @@
  <summary>Table of contents</summary>
  
  * [Why the dataset was created](#why-the-dataset-was-created)  
+ * [How the dataset was created](#how-the-dataset-was-created)
  * [What can you do with the data?](#what-can-you-do-with-the-data)
  * [Download the data](#download-the-data)
  * [Sample uses](#sample-uses)
  * [Citing jazzNet](#citing-jazznet)
  </details>
 
-The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. Details and description of the dataset and labels can be found in the following paper:
-
-
+The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. Details and description of the dataset and labels can be found in the following preprint:
 
 ![image](https://user-images.githubusercontent.com/16122125/184457882-e0fe1121-8e34-4d71-bb8e-697a8c81ac15.png)
 
@@ -22,7 +21,10 @@ The dataset is created for machine learning research in music information retrie
 
 The general motivation behind the dataset is simple: if you want to learn jazz piano music, you could listen to jazz music and try to replicate it. Or you could learn the fundamentals of jazz piano music (chords, scales, arpeggios, chord progressions) and build on the fundamentals--this would be a more effective way to learn. So, the dataset aims to mimic the data that would be used for effective learning; it contains several automatically generated "fundamental jazz piano patterns". 
 
-The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. So, if you have a pattern you would like included in the dataset, send me an email, and maybe I will add it. Or you could play around with the scripts yourself and generate new patterns.
+The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. With the provided scripts, you can generate new patterns. Furthermore, if you have a pattern you would like included in the dataset, send me an email, and maybe I will add it. 
+
+## How the dataset was created
+There is quite a bit of background music theory for creating the dataset. The theory is summarized in the preprint.
 
 ## What can you do with the data?
 I imagine it would be a challenging dataset for a variety of ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *generate new music* based on the patterns in the dataset. And probably a bunch of other interesting things that I'm not thinking about right now. You can also test your image recognition models on spectrograms generated from the music in the dataset.
