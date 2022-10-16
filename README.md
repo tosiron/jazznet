@@ -13,7 +13,7 @@
  * [Contact](#contact)
  </details>
 
-The jazznet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
+The jazznet dataset is a dataset containing 256GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
 
 ![image](https://user-images.githubusercontent.com/16122125/196017322-80bc3fdb-ede1-409b-b71b-80860d4d629b.png)
 
@@ -22,7 +22,7 @@ The dataset is created for machine learning research in music information retrie
 
 The general motivation behind the dataset is simple: if you want to learn jazz piano music, you could listen to jazz music and try to replicate it. Or you could learn the fundamentals of jazz piano music (chords, scales, arpeggios, chord progressions) and build on the fundamentals--this would be a more effective way to learn. So, the dataset aims to mimic the data that would be used for effective learning; it contains several automatically generated "fundamental jazz piano patterns". 
 
-The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. With the provided scripts, you can generate new patterns. Furthermore, if you have a pattern you would like included in the dataset, send me an email, and maybe I will add it. 
+The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. With the provided scripts, you can generate new patterns. Furthermore, if you have a pattern you would like included in the dataset, [send me an email](#contact), and maybe I will add it if you ask nicely. 
 
 ## How the dataset was created
 There is a bit of background music theory necessary for understanding how the dataset was created. The theory is summarized in the preprint. Several resources were surveyed, including jazz piano education books (like The Jazz Piano Book) and numerous jazz standards to identify some commonly occurring patterns. 
