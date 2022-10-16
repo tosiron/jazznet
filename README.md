@@ -43,7 +43,7 @@ The table below depicts the statistics of the dataset.
 
 ### WAV files
 
-You may use the `download.py` file to download the files. You may specify a subset. For example, to download the `small` subset:
+You may use the [`download.py`](download.py) file to download the files. You may specify a subset. For example, to download the `small` subset:
 
 ```
 python download.py small
@@ -68,7 +68,7 @@ Progressions subsets:
 ### Generate new patterns
 Python scripts are provided to enable you to extend the dataset by generating numerous new patterns. 
 
-Details can be found in the Pattern Generator folder.
+Details can be found in the [Pattern Generator folder](Pattern%20Generator).
 
 ### Citing jazznet
 If you use the jazznet dataset (or the accompanying paper) in your work, please cite the following paper:
