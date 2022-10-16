@@ -13,7 +13,7 @@
  * [Contact](#contact)
  </details>
 
-The jazznet dataset is a dataset containing 256GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
+The jazznet dataset is a dataset containing 101GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
 
 ![image](https://user-images.githubusercontent.com/16122125/196017322-80bc3fdb-ede1-409b-b71b-80860d4d629b.png)
 
