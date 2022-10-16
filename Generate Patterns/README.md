@@ -1,18 +1,18 @@
-The provided Python scripts generate patterns in all their inversions and in all 88 keys of the piano.
+The provided Python scripts generate patterns in all 88 keys of the piano and in all their inversions. Progressions are generated in the combinations of inversions. The usage and currently supported patterns are described below. The Python scripts can easily be modified to support additional patterns. Alternatively, if there is a pattern you would like support for, send me an email and I might add it time permitting and if you ask nicely.
 
 ### Generate chords and arpeggios
 
 Chords and arpeggios can be generated using the `generateChords.py` file. The `length`, `offset`, `type`, and `name` must be provided as arguments.
 
-Length: `dyad`, `triad`, and `tetrad`. 
+Length: `dyad`, `triad`, or `tetrad`. 
 
-Offset: Offsets are the distance in semitones from one note to each subsequent note (the root note is implied). Thus, dyads (2-note chords) require 1 offset, triads (3-note chords) require 2, and tetrads (4-note chords) require 3. For example, for a major chord, the offsets are `4 3`. For a major 7th chord, the offsets are `4 3 4`.
+Offset: Offsets are the pitch distances (in semitones) from one note to each subsequent note (the root note is implied). Thus, dyads (2-note chords) require 1 offset, triads (3-note chords) require 2, and tetrads (4-note chords) require 3. For example, for a major chord, the offsets are `4 3`. For a major 7th chord, the offsets are `4 3 4`.
 
 Type: `chord` or `arpeggio`.
 
 Name: A short descriptive name must be provided (e.g., `maj` or `min7b5`)
 
-**Example**: Generate the min7b5 chord in all keys
+**Example**: Generate the min7b5 chord in all keys and in all inversions.
 
 ``
 python generateChords.py tetrad 3 3 4 arpeggio min7b5
