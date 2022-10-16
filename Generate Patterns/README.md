@@ -1,4 +1,4 @@
-The provided Python scripts generate patterns in all 88 keys of the piano and in all their inversions. Progressions are generated in the combinations of inversions. The usage and currently supported patterns are described below. The Python scripts can easily be modified to support additional patterns. Alternatively, if there is a pattern you would like support for, send me an email and I might add it time permitting and if you ask nicely.
+The provided Python scripts generate patterns in all 88 keys of the piano and in all their inversions. Progressions are generated in the combinations of inversions. Patterns are generated in a `patterns/<type>` directory within the current working directory, where `type` is `chords`, `arpeggios`, `scales`, or `progressions`. The usage and currently supported patterns are described below. The Python scripts can easily be modified to support additional patterns. Alternatively, if there is a pattern you would like support for, send me an email and I might add it time permitting and if you ask nicely.
 
 ### Generate chords and arpeggios
 
@@ -36,10 +36,12 @@ python generateScales.py 2 2 1 2 2 2 ionian
 
 Progressions can be generated using the `generateProgressions.py` file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any extentions/alterations, basic triads are generated. Chords can also be extended or altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. Note that only 3- and 4-chord progressions are currently supported.
 
-**Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7
+Name: A short descriptive name.
+
+**Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7, named "ii-V-I".
 
 ``
-python generateProgressions.py ii,7b5-V-I,maj7
+python generateProgressions.py ii,7b5-V-I,maj7 ii-V-I
 ``
 
 The table below shows the currently supported extensions/alterations.
