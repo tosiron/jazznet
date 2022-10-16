@@ -1,4 +1,4 @@
-# jazzNet Dataset
+# jazznet Dataset
 ![image](https://user-images.githubusercontent.com/16122125/184457848-15a2bb14-e5b1-4cef-a7f3-64e93792dd31.png)
 
 <details>
@@ -12,7 +12,7 @@
  * [Citing jazzNet](#citing-jazznet)
  </details>
 
-The jazzNet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
+The jazznet dataset is a dataset containing 256GB of audio recordings of 161,840 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions. The figure below depicts the taxonomy of the dataset. 
 
 ![image](https://user-images.githubusercontent.com/16122125/196017322-80bc3fdb-ede1-409b-b71b-80860d4d629b.png)
 
@@ -32,62 +32,46 @@ I imagine it would be a challenging dataset for a variety of ML tasks. You can a
 ## Download the data
 
 The table below depicts the statistics of the dataset.  
-![image](https://user-images.githubusercontent.com/16122125/194719015-a12f6732-7421-4eec-a06d-46fc645415f1.png)
 
-To make the downloads managable, the data are broken down into multiple tarballs if you want to download individual components.
-
-To download everything, use the `download.py` file.
+![image](https://user-images.githubusercontent.com/16122125/196059933-0a3d1331-3049-4621-a00b-4c12905411cf.png)
 
 ### Metadata
-* [All labels](https://tosiron.com/jazznet/dataset/metadata.tar.gz) (2MB)
+* [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
 
 ### MIDI files
-* [All patterns](https://tosiron.com/jazznet/dataset/midi.tar.gz) (2.5MB)
+* [All patterns](https://uweb.engr.arizona.edu/~tosiron/jazznet/midi.tar.gz) (2.5MB)
 
 ### WAV files
-All sizes are the compressed data sizes.
-* [Chords](https://tosiron.com/jazznet/dataset/wav/chords.tar.gz) (1GB)
-* [Arpeggios](https://tosiron.com/jazznet/dataset/wav/arpeggios.tar.gz) (2GB)
-* [Scales](https://tosiron.com/jazznet/dataset/wav/scales.tar.gz) (4GB)
-* Progressions: Due to the size, the progressions are broken down into 9 downloads featuring the 9 chord progressions.
-  * [ii-V-I-maj](https://tosiron.com/jazznet/dataset/wav/progressions/ii-V-I-maj.tar.gz) (6GB)
-  * [ii-V-i-min](https://tosiron.com/jazznet/dataset/wav/progressions/ii-V-i-min.tar.gz) (6GB)
-  * [ii-triV-I](https://tosiron.com/jazznet/dataset/wav/progressions/ii-triV-I.tar.gz) (6GB) 
-  * [I-VI-ii-V-maj](https://tosiron.com/jazznet/dataset/wav/progressions/I-VI-ii-V-maj.tar.gz) (20GB)
-  * [i-vi-ii-V-min](https://tosiron.com/jazznet/dataset/wav/progressions/i-vi-ii-V-min.tar.gz) (20GB)
-  * [iii-VI-ii-V](https://tosiron.com/jazznet/dataset/wav/progressions/iii-VI-ii-V.tar.gz) (10GB)
-  * [I-i#-ii-V](https://tosiron.com/jazznet/dataset/wav/progressions/I-is-ii-V.tar.gz) (20GB)
-  * [I-IV7-iii-VI7](https://tosiron.com/jazznet/dataset/wav/progressions/I-IV7-iii-VI7.tar.gz) (20GB)
-  * [ii#-V#-ii-V](https://tosiron.com/jazznet/dataset/wav/progressions/iis-Vs-ii-V.tar.gz) (20GB)
 
-### NPZ files (for type and mode prediction using the subsets)
-* [Small NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
-* [Medium NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
-* [Large NPZ files](https://tosiron.com/jazznet/dataset/npz.tar.gz) (8.4GB)
+You may use the `download.py` file to download the files. You may specify a subset. For example, to download the `small` subset:
+
+```
+python download.py small
+```
+
+If no subset is specified, the full dataset is downloaded.
+
+Alternatively, you may manually download the files below. Chords, arpeggios, and scales are part of all subsets. 
+
+* [Chords](https://uweb.engr.arizona.edu/~tosiron/jazznet/chords.tar.gz) (380MB/1GB)
+* [Arpeggios](https://uweb.engr.arizona.edu/~tosiron/jazznet/arpeggios.tar.gz) (768MB/1.7GB)
+* [Scales](https://uweb.engr.arizona.edu/~tosiron/jazznet/scales.tar.gz) (3.4GB/6.3GB)
+* [Progressions](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions.tar.gz) (48.8GB/91.3GB)
+
+Progressions subsets:
+* [Progressions-small](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-small.tar.gz) (2GB/3.65GB)
+* [Progressions-medium](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-medium.tar.gz) (4.8GBGB/9.1GB)
+* [Progressions-large](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-large.tar.gz) (12.2GBGB/22.8GB)
 
 ### Sample uses
 
 ### Generate new patterns
-You can use the provided Python scripts to generate MIDI files for new patterns and then convert them to WAV files. You will need [MIDI Util](https://pypi.org/project/MIDIUtil/), which can be installed using pip:
+Python scripts are provided to enable you to extend the dataset by generating numerous new patterns. 
 
-```
-pip install MIDIUtil
-```
+Details can be found in the Pattern Generator folder.
 
-You can then generate patterns by specifying the patterns and rules using the `generateChords.py`, `generateScales.py`, and `generateProgressions.py` files. Each file takes in a few arguments to determine the kind of pattern and how to define the patterns. For instance, to generate the major chord in all keys of the standard 88-key piano, you would use the generateChords.py script as follows:
-
-```
-python generateChords.py triad 4 3 chord maj
-```
-
-where "triad" is the kind of chord and 4 is the distance (in semitones) from the root note; 3 is the distance from the second note, "maj" is the name given to the chord appended to the filenames.
-
-Details can be found in the Generate Patterns folder.
-
-### Citing jazzNet
-If you use the jazzNet dataset (or the accompanying paper) in your work, we would appreciate references to the following paper:
-
-##### *jazzNet: An Open-Source Dataset of Fundamental Piano Patterns for Machine Learning Research in Music*, Tosiron Adegbija (2022)
+### Citing jazznet
+If you use the jazznet dataset (or the accompanying paper) in your work, please cite the following paper:
 
 #### BibTeX citation
 ```
