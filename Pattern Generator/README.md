@@ -55,3 +55,8 @@ The table below shows the currently supported extensions/alterations.
 | maj7b5 | Major seventh flat 5 |
 | maj7#5 | Major seventh sharp 5 |
 
+Note: min can be represented using the small Roman numeral.
+
+Chords can be sharpened or flattened using # or b. E.g., II,b. Chords can also be raised/lowered and altered. E.g., II,b,7. A maximum of three arguments are allowed and the chord must be followed by the sharp or flat, and then the alteration.
+
+
