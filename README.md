@@ -34,7 +34,7 @@ I imagine it would be a challenging dataset for a variety of ML tasks. You can a
 
 The table below depicts the statistics of the dataset.  
 
-![image](https://user-images.githubusercontent.com/16122125/196059933-0a3d1331-3049-4621-a00b-4c12905411cf.png)
+![image](https://user-images.githubusercontent.com/16122125/196299915-1897c52b-1d6e-404f-97fd-9b23ac30594e.png)
 
 ### Metadata
 * [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
