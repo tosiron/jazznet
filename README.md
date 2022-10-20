@@ -28,7 +28,7 @@ The dataset is by no means "complete". For instance, it currently does not conta
 There is a bit of [background music theory](musicBackground.md) necessary for understanding how the dataset was created (although, not necessary for using the dataset). To determine which patterns to include, several resources were surveyed, including jazz piano education books (like The Jazz Piano Book) and numerous jazz standards to identify the basis for the most popular patterns. 
 
 ## What can you do with the data?
-I imagine it would be a challenging dataset for a variety of ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *generate new music* based on the patterns in the dataset. And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
+I imagine it would be a good dataset for a variety of challenging ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *generate new music* based on the patterns in the dataset. And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
 
 ## Download the data
 
