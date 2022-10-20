@@ -34,9 +34,9 @@ I imagine it would be a good dataset for a variety of challenging ML tasks. You 
 
 ## Download the data
 
-The table below depicts the statistics of the dataset.  
+The table below depicts the dataset's statistics.  
 
-![image](https://user-images.githubusercontent.com/16122125/196299915-1897c52b-1d6e-404f-97fd-9b23ac30594e.png)
+![image](https://user-images.githubusercontent.com/16122125/197067040-4775a691-6a20-4f31-814d-754ef310f1cd.png)
 
 ### Metadata
 * [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
