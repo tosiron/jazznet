@@ -1,4 +1,4 @@
-# jazznet Dataset: 
+# jazznet Dataset
 ![image](https://user-images.githubusercontent.com/16122125/184457848-15a2bb14-e5b1-4cef-a7f3-64e93792dd31.png)
 
 <details>
@@ -13,7 +13,7 @@
  * [Contact](#contact)
  </details>
 
-The jazznet dataset is a dataset containing 101GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. The figure below depicts the taxonomy of the dataset. 
+The jazznet dataset is a dataset containing ~100GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. The figure below depicts the taxonomy of the dataset. 
 
 ![image](https://user-images.githubusercontent.com/16122125/196017322-80bc3fdb-ede1-409b-b71b-80860d4d629b.png)
 
@@ -25,7 +25,7 @@ The general motivation behind the dataset is simple: if you want to learn jazz p
 The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. With the provided scripts, you can generate new patterns. Furthermore, if you have a pattern you would like included in the dataset, [send me an email](#contact), and maybe I will add it if you ask nicely. 
 
 ## How the dataset was created
-There is a bit of [background music theory](musicBackground.md) necessary for understanding how the dataset was created (although, not necessary for using the background. To determine which patterns to include, several resources were surveyed, including jazz piano education books (like The Jazz Piano Book) and numerous jazz standards to identify the basis for the most popular patterns. 
+There is a bit of [background music theory](musicBackground.md) necessary for understanding how the dataset was created (although, not necessary for using the dataset). To determine which patterns to include, several resources were surveyed, including jazz piano education books (like The Jazz Piano Book) and numerous jazz standards to identify the basis for the most popular patterns. 
 
 ## What can you do with the data?
 I imagine it would be a challenging dataset for a variety of ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *generate new music* based on the patterns in the dataset. And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
@@ -64,7 +64,9 @@ Progressions subsets:
 * [Progressions-medium](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-medium.tar.gz) (4.8GBGB/9.1GB)
 * [Progressions-large](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-large.tar.gz) (12.2GBGB/22.8GB)
 
-### Sample uses
+### Samples
+
+Some samples can be found [here.](https://tosiron.com/jazznet/) 
 
 ### Generate new patterns
 Python scripts are provided to enable you to extend the dataset by generating numerous new patterns. 
@@ -82,7 +84,7 @@ If you use the jazznet dataset (or the accompanying paper) in your work, please 
 }
 ```
 ### Contact
-If you have any questions, comments, or just want to say hi, feel free to email me (Tosi): tosiron@arizona.edu.
+If you have any questions, comments, or just want to say hi, feel free to email me (Tosi): tosiron[at]arizona.edu.
 
 ### License
 The project is licensed under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
