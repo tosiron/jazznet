@@ -1,5 +1,13 @@
 The provided Python scripts generate patterns in all 88 keys of the piano and in all their inversions. Progressions are generated in the combinations of inversions. Patterns are generated in a `patterns/<type>` directory within the current working directory, where `<type>` is `chords`, `arpeggios`, `scales`, or `progressions`. The usage and currently supported patterns are described below. The Python scripts can easily be modified to support additional patterns. Alternatively, if there is a pattern you would like support for, send me an email and I might add it time permitting and if you ask nicely.
 
+### Dependencies
+
+Only the MIDIUtil Python package is required. It can be installed using:
+
+```
+pip install MIDIUtil
+```
+
 ### Generate chords and arpeggios
 
 Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `length`, `offset`, `type`, and `name` must be provided as arguments.
