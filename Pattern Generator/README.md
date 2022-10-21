@@ -2,7 +2,7 @@ The provided Python scripts generate patterns in all 88 keys of the piano and in
 
 ### Generate chords and arpeggios
 
-Chords and arpeggios can be generated using the `generateChords.py` file. The `length`, `offset`, `type`, and `name` must be provided as arguments.
+Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `length`, `offset`, `type`, and `name` must be provided as arguments.
 
 Length: `dyad`, `triad`, or `tetrad`. 
 
