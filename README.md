@@ -22,7 +22,7 @@ The dataset is created for machine learning research in music information retrie
 
 The general motivation behind the dataset is simple: if you wanted to learn jazz piano, you could listen to several jazz music pieces and try to replicate them. Or you could learn the fundamentals of jazz piano music (chords, scales, arpeggios, chord progressions) and build on the fundamentals--this would be a more effective way to learn. So, the dataset aims to mimic the data that would be used for effective learning. It contains automatically generated "fundamental jazz piano patterns". 
 
-Another reason (perhaps, the most important reason) why the dataset was created is that I enjoyed doing it. It was very time-consuming to curate the dataset, develop the pattern generator, ascertain correctness of generated patterns and labels, etc. But it was fun.
+Another reason (perhaps, the most important reason) why the dataset was created is that I enjoyed doing it. It was very time-consuming to curate the dataset, develop the pattern generator, ascertain correctness of generated patterns and labels, etc. But it was fun and I hope you find it useful.
 
 The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. With the provided *pattern generator* scripts, you can generate new patterns. Furthermore, if you have a pattern you would like included in the dataset, [send me an email](#contact), and maybe I will add it if you ask nicely. 
 
