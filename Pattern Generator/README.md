@@ -42,7 +42,7 @@ python generateScales.py 2 2 1 2 2 2 ionian
 
 ### Generate progressions
 
-Progressions can be generated using the [`generateProgressions.py`](generateProgressions.py) file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any extentions/alterations, basic triads are generated. Chords can also be extended or altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. Note that only 3- and 4-chord progressions are currently supported.
+Progressions can be generated using the [`generateProgressions.py`](generateProgressions.py) file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any extentions/alterations, basic triads are generated. Chords can also be extended or altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. If using the `#` (sharp) or `b` (flat) alteration, they must follow the chord. Note that only 3- and 4-chord progressions are currently supported.
 
 A short descriptive name must also be provided as the final argument.
 
@@ -62,9 +62,11 @@ The table below shows the currently supported extensions/alterations.
 | maj7 | Major seventh |
 | maj7b5 | Major seventh flat 5 |
 | maj7#5 | Major seventh sharp 5 |
+| # | Sharpen all notes in the chord |
+| b | Flatten all notes in the chord |
 
 Note: min can be represented using the small Roman numeral.
 
-Chords can be sharpened or flattened using # or b. E.g., II,b. Chords can also be raised/lowered and altered. E.g., II,b,7. A maximum of three arguments are allowed and the chord must be followed by the sharp or flat, and then the alteration.
+Chords can be sharpened or flattened using # or b. E.g., II,b. Sharpened/flattend chords can also be altered. E.g., II,b,7. A maximum of three arguments are allowed and the chord must be followed by the sharp or flat, and then the alteration.
 
 
