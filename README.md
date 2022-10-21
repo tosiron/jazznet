@@ -30,7 +30,7 @@ The dataset is by no means "complete". For instance, it currently does not conta
 There is a bit of [background music theory](musicBackground.md) necessary for understanding how the dataset was created (although, not necessary for using the dataset). To determine which patterns to include, several resources were surveyed, including jazz piano education books (like The Jazz Piano Book) and numerous jazz standards to identify the basis for the most popular patterns. 
 
 ## What can you do with the data?
-I imagine it would be an excellent dataset for a variety of challenging ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *understand and generate music* based on the patterns in the dataset. And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
+I imagine it would be an excellent dataset for a variety of challenging ML tasks. The basic tasks include what I call *machine music understanding*, e.g., is some input a chord, scale, or arpeggio. These would be relatively easy for a ML model. More challenging tasks within machine music understanding would be identifying what _kinds_ of patterns are present; e.g., is it an augumented or diminished chord, or what progression is it? Other possible tasks include things like *automatic music transcription* (related to music understanding); develop *music recommender systems* based on the kinds of musical patterns a listener likes (someone who likes a Taylor Swift song might like other songs with only four chords (I, IV, V, VI)---five chords, when Ms. Swift is feeling adventurous); *understand and generate music* based on the patterns in the dataset (e.g., learn what arpeggios/scales are played over what chords/progressions). And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
 
 ## Download the data
 
@@ -38,13 +38,17 @@ The table below depicts the dataset's statistics.
 
 ![image](https://user-images.githubusercontent.com/16122125/197067040-4775a691-6a20-4f31-814d-754ef310f1cd.png)
 
-### Metadata
+### [Metadata](metadata)
 * [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
 
 ### MIDI files
 * [All patterns](https://uweb.engr.arizona.edu/~tosiron/jazznet/midi.tar.gz) (2.5MB)
 
 ### WAV files
+
+There are suggested subsets to make the dataset more tractable to download and use. The table below shows the subset statistics:
+
+
 
 You may use the [`download.py`](download.py) file to download the files. You may specify a subset. For example, to download the `small` subset:
 
