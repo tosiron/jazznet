@@ -8,7 +8,7 @@
  * [How the dataset was created](#how-the-dataset-was-created)
  * [What can you do with the data?](#what-can-you-do-with-the-data)
  * [Download the data](#download-the-data)
- * [Sample uses](#sample-uses)
+ * [Sample uses](#samples)
  * [Citing jazzNet](#citing-jazznet)
  * [Contact](#contact)
  </details>
@@ -22,7 +22,7 @@ The dataset is created for machine learning research in music information retrie
 
 The general motivation behind the dataset is simple: if you wanted to learn jazz piano, you could listen to several jazz music pieces and try to replicate them. Or you could learn the fundamentals of jazz piano music (chords, scales, arpeggios, chord progressions) and build on the fundamentals--this would be a more effective way to learn. So, the dataset aims to mimic the data that would be used for effective learning. It contains automatically generated "fundamental jazz piano patterns". 
 
-Another reason why the dataset was created is that I enjoyed doing it. It was very time-consuming to curate the dataset, write the generation scripts, ascertain correctness of generated patterns and labels, etc. But it was fun.
+Another reason (perhaps, the most important reason) why the dataset was created is that I enjoyed doing it. It was very time-consuming to curate the dataset, develop the pattern generator, ascertain correctness of generated patterns and labels, etc. But it was fun.
 
 The dataset is by no means "complete". For instance, it currently does not contain musical dynamics; it might not contain some of *your* favorite chords or progressions (partly because I probably don't know you and I wasn't trying to please you). But it is extensible. With the provided *pattern generator* scripts, you can generate new patterns. Furthermore, if you have a pattern you would like included in the dataset, [send me an email](#contact), and maybe I will add it if you ask nicely. 
 
@@ -30,7 +30,7 @@ The dataset is by no means "complete". For instance, it currently does not conta
 There is a bit of [background music theory](musicBackground.md) necessary for understanding how the dataset was created (although, not necessary for using the dataset). To determine which patterns to include, several resources were surveyed, including jazz piano education books (like The Jazz Piano Book) and numerous jazz standards to identify the basis for the most popular patterns. 
 
 ## What can you do with the data?
-I imagine it would be a good dataset for a variety of challenging ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *understand and generate music* based on the patterns in the dataset. And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
+I imagine it would be an excellent dataset for a variety of challenging ML tasks. You can attempt things like *automatic music transcription*; develop *music recommender systems* based on the kinds of musical patterns a listener likes; *understand and generate music* based on the patterns in the dataset. And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
 
 ## Download the data
 
@@ -62,9 +62,9 @@ Alternatively, you may manually download the files below. Chords, arpeggios, and
 * [Progressions](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions.tar.gz) (48.8GB/91.3GB)
 
 Progressions subsets:
-* [Progressions-small](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-small.tar.gz) (2GB/3.65GB)
-* [Progressions-medium](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-medium.tar.gz) (4.8GBGB/9.1GB)
-* [Progressions-large](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-large.tar.gz) (12.2GBGB/22.8GB)
+* [Progressions-small](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-small.tar.gz) (1.9GB/3.4GB)
+* [Progressions-medium](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-medium.tar.gz) (4.6GBGB/8.7GB)
+* [Progressions-large](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-large.tar.gz) (11.6GB/21.4GB)
 
 ### Samples
 
@@ -76,7 +76,7 @@ Python scripts are provided to enable you to extend the dataset by generating nu
 Details can be found in the [Pattern Generator folder](Pattern%20Generator).
 
 ### Citing jazznet
-If you use the jazznet dataset (or the accompanying paper) in your work, please cite the following paper:
+If you use the jazznet dataset in your work, please cite it as follows:
 
 ```
 @online{adegbija22,
