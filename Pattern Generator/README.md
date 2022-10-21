@@ -44,7 +44,7 @@ python generateScales.py 2 2 1 2 2 2 ionian
 
 Progressions can be generated using the [`generateProgressions.py`](generateProgressions.py) file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any extentions/alterations, basic triads are generated. Chords can also be extended or altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. Note that only 3- and 4-chord progressions are currently supported.
 
-Name: A short descriptive name.
+A short descriptive name must also be provided as the final argument.
 
 **Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7, named "ii-V-I".
 
