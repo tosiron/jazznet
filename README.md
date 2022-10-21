@@ -68,7 +68,7 @@ Progressions subsets:
 
 ### Samples
 
-Listen to a few samples [here.](https://tosiron.com/jazznet/) <a href="https://tosiron.com/jazznet/" target="_blank">here</a>
+Listen to a few samples [here.](https://tosiron.com/jazznet/)
 
 ### Generate new patterns
 Python scripts are provided to enable you to extend the dataset by generating numerous new patterns. 
