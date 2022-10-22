@@ -55,13 +55,13 @@ There are suggested progression subsets to make the dataset more tractable to do
 | Large | 52360 |
 | Full | 162520 |
 
-You may use the [`download.py`](download.py) file to download the files. You may specify a subset. For example, to download the `small` subset:
+You may use the [`download.py`](download.py) file to download the files into the current working directory. You may specify a subset. For example, to download the `small` subset:
 
 ```
 python download.py small
 ```
 
-If no subset is specified, the full dataset is downloaded.
+If no subset or anything but `small`, `medium`, or `large` is specified, the full dataset is downloaded.
 
 Alternatively, you may manually download the files below. Chords, arpeggios, and scales are part of all subsets. 
 
