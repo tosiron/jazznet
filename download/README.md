@@ -1,4 +1,25 @@
-You may use the [`download.py`](download.py) file to download the files (a `wav` directory is created and the files are downloaded into it). You may specify a subset. For example, to download the `small` subset:
+The table below depicts the dataset's statistics.  
+
+![image](https://user-images.githubusercontent.com/16122125/197067040-4775a691-6a20-4f31-814d-754ef310f1cd.png)
+
+### [Metadata](metadata)
+* [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
+
+### MIDI files
+* [All patterns](https://uweb.engr.arizona.edu/~tosiron/jazznet/midi.tar.gz) (2.5MB)
+
+### WAV files
+
+There are suggested progression subsets to make the dataset more tractable to download and use. All the chords, arpeggios, and scales are in all the subsets. The table below shows the subset statistics:
+
+| Subset        | Data | 
+| ------------- |:-------------:| 
+| Small      | 21516 | 
+| Medium     | 30328      |
+| Large | 52360 |
+| Full | 162520 |
+
+You may use the [`download.py`](download.py) file to download the files into the current working directory. You may specify a subset. For example, to download the `small` subset:
 
 ```
 python download.py small
