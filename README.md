@@ -46,9 +46,14 @@ The table below depicts the dataset's statistics.
 
 ### WAV files
 
-There are suggested subsets to make the dataset more tractable to download and use. The table below shows the subset statistics:
+There are suggested progression subsets to make the dataset more tractable to download and use. All the chords, arpeggios, and scales are in all the subsets. The table below shows the subset statistics:
 
-
+| Subset        | Data | 
+| ------------- |:-------------:| 
+| Small      | 21516 | 
+| Medium     | 30328      |
+| Large | 52360 |
+| Full | 162520 |
 
 You may use the [`download.py`](download.py) file to download the files. You may specify a subset. For example, to download the `small` subset:
 
