@@ -1,7 +1,3 @@
-The table below depicts the dataset's statistics.  
-
-![image](https://user-images.githubusercontent.com/16122125/197067040-4775a691-6a20-4f31-814d-754ef310f1cd.png)
-
 ### [Metadata](metadata)
 * [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
 
