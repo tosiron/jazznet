@@ -14,9 +14,13 @@
  * [Contact](#contact)
  </details>
 
-The jazznet dataset is a dataset containing ~100GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. The figure below depicts the taxonomy of the dataset. 
+The jazznet dataset is a dataset containing ~95GB of audio recordings of 162520 fundamental piano jazz patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. The figure below depicts the taxonomy of the dataset. 
 
 ![image](https://user-images.githubusercontent.com/16122125/196017322-80bc3fdb-ede1-409b-b71b-80860d4d629b.png)
+
+The table below depicts the dataset's statistics.  
+
+![image](https://user-images.githubusercontent.com/16122125/197067040-4775a691-6a20-4f31-814d-754ef310f1cd.png)
 
 ## Why the dataset was created
 The dataset is created for machine learning research in music information retrieval (MIR). In general, datasets in the music arena seem to lag datasets in other areas like image recognition. So, this dataset aims to contribute to the body of large-scale datasets available for MIR research.
@@ -34,9 +38,6 @@ There is a bit of [background music theory](musicBackground.md) necessary for un
 I imagine it would be an excellent dataset for a variety of challenging ML tasks. The basic tasks include what I call *machine music understanding*, e.g., is some input a chord, scale, or arpeggio. These would be relatively easy for a ML model. More challenging tasks within machine music understanding would be identifying what _kinds_ of patterns are present; e.g., is it an augumented or diminished chord, or what progression is it? Other possible tasks include things like *automatic music transcription* (related to music understanding); develop *music recommender systems* based on the kinds of musical patterns a listener likes (someone who likes a Taylor Swift song might like other songs with only four chords (I, IV, V, VI)---five chords, when Ms. Swift is feeling adventurous); *understand and generate music* based on the patterns in the dataset (e.g., learn what arpeggios/scales are played over what chords/progressions). And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
 
 ## Download the data
-The table below depicts the dataset's statistics.  
-
-![image](https://user-images.githubusercontent.com/16122125/197067040-4775a691-6a20-4f31-814d-754ef310f1cd.png)
 
 Details on how to download the data can be found [here](download).
 
