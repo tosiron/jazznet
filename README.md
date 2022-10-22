@@ -7,8 +7,9 @@
  * [Why the dataset was created](#why-the-dataset-was-created)  
  * [How the dataset was created](#how-the-dataset-was-created)
  * [What can you do with the data?](#what-can-you-do-with-the-data)
- * [Download the data](#download-the-data)
- * [Sample uses](#samples)
+ * [Download the data](download)
+ * [Samples](#samples)
+ * [Generate new patterns](Pattern%20Generator)
  * [Citing jazzNet](#citing-jazznet)
  * [Contact](#contact)
  </details>
@@ -34,7 +35,7 @@ I imagine it would be an excellent dataset for a variety of challenging ML tasks
 
 ## Download the data
 
-
+Details on how to download the data can be found [here](download).
 
 ### Samples
 
