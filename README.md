@@ -8,7 +8,7 @@
  * [How the dataset was created](#how-the-dataset-was-created)
  * [What can you do with the data?](#what-can-you-do-with-the-data)
  * [Download the data](download)
- * [Samples](#samples)
+ * [Listen to samples](https://tosiron.com/jazznet/)
  * [Generate new patterns](Pattern%20Generator)
  * [Citing jazzNet](#citing-jazznet)
  * [Contact](#contact)
