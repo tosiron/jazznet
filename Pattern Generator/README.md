@@ -54,7 +54,7 @@ python generateProgressions.py ii,7b5-V-I,maj7 ii-V-I
 
 The table below shows the currently supported extensions/alterations.
 
-| Alteration        | Description | 
+| Ext/Alt       | Description | 
 | ------------- |:-------------:| 
 | 7      | Dominant seventh | 
 | 7b5      | Seventh flat 5      | 
