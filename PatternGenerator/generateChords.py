@@ -3,7 +3,6 @@
 #USAGE: python generateScales.py <chordLength> <offsets> <name> (the root note is implied)
 #E.g., to generate min7b5 chord: python generateScales.py tetrad 3 3 3 chord min7b5
 
-from re import T
 from midiutil import MIDIFile
 import os
 import sys
