@@ -7,15 +7,21 @@ from midiutil import MIDIFile
 import os
 import sys
 from pathlib import Path
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-o', '--offset', required=True, help="Distances of successive pitches")
+parser.add_argument('-n', '--name', required=True, help="Short descriptive name, e.g., ionian. No spaces.")
+
+args = parser.parse_args()
 
 noteArray = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
 octaveArray = [1, 2, 3, 4, 5, 6, 7, 8]
 
-offset = []
-
-for i in range(1, len(sys.argv)-1):
-    offset.append(sys.argv[i])
-scaleName = sys.argv[-1]
+scaleName = args.name
+distances = args.offset
+offset = distances.split(" ")
 
 nameArray = []
 
@@ -33,8 +39,8 @@ for q, j in zip(nameArray, range(24,109)):
     nArray.append(base)
     note = base
 
-    for i in range(1, len(sys.argv)-1):
-        note = note+int(sys.argv[i])
+    for i in range(0, len(offset)):
+        note = note+int(offset[i])
         nArray.append(note)
 	
     for h in range(0,len(nArray)): #range for inversions
@@ -64,8 +70,8 @@ for q, j in zip(nameArray, range(24,109)):
             MyMIDI.addNote(track, channel, pitch, time+i, duration, volume)
         
         midiName = noteName+'-'+scaleName+appendInversion+".mid"
-        filename = "patterns/scale/"+scaleName+"/"+midiName
-        path = "patterns/scale/"+scaleName
+        filename = "patterns/scales/"+scaleName+"/"+midiName
+        path = "patterns/scales/"+scaleName
 		
 		#create the directory if it doesn't exist
         Path(path).mkdir(parents=True, exist_ok=True)

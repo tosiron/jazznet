@@ -3,35 +3,52 @@
 #USAGE: python generateScales.py <chordLength> <offsets> <name> (the root note is implied)
 #E.g., to generate min7b5 chord: python generateScales.py tetrad 3 3 3 chord min7b5
 
+from re import T
 from midiutil import MIDIFile
 import os
 import sys
 from pathlib import Path
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-t', '--type', required=True, help="Pattern type to generate: chord or arpeggio")
+parser.add_argument('-l', '--length', required=True, help="Length of the pattern: dyad, triad, or tetrad")
+parser.add_argument('-o', '--offset', required=True, help="Distances of successive pitches")
+parser.add_argument('-n', '--name', required=True, help="Short descriptive name, e.g., min7. No spaces.")
+
+args = parser.parse_args()
+
 
 noteArray = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
 octaveArray = [1, 2, 3, 4, 5, 6, 7, 8]
 
-chordLength = sys.argv[1]
+chordLength = args.length
 if chordLength not in ["dyad", "triad", "tetrad"]:
 	raise ValueError("The chord type is not recognized. Options are dyad, triad, and tetrad.")
 
-if chordLength == "dyad":
-	offset1 = int(sys.argv[2])
-	style = sys.argv[3]
-	chordType = sys.argv[4]
-elif chordLength == "triad":
-	offset1 = int(sys.argv[2])
-	offset2 = int(sys.argv[3])
-	style = sys.argv[4]
-	chordType = sys.argv[5]
-elif chordLength == "tetrad":
-	offset1 = int(sys.argv[2])
-	offset2 = int(sys.argv[3])
-	offset3 = int(sys.argv[4])
-	style = sys.argv[5]
-	chordType = sys.argv[6]
+distances_1 = args.offset
+distances = distances_1.split(' ')
+chordType = args.name
 
-if style not in ["arpeggio", "chord"]:
+if chordLength == "dyad":
+	if len(distances) != 1:
+		raise ValueError("Only one offset is allowed for dyads")
+	offset1 = int(distances[0])
+elif chordLength == "triad":
+	if len(distances) != 2:
+		raise ValueError("Two offsets must be provided for triads")
+	offset1 = int(distances[0])
+	offset2 = int(distances[1])
+elif chordLength == "tetrad":
+	if len(distances) != 3:
+		raise ValueError("Three offsets must be provided for tetrads")
+	offset1 = int(distances[0])
+	offset2 = int(distances[1])
+	offset3 = int(distances[2])
+
+style = args.type
+if style not in ["arpeggios", "chords"]:
 	raise ValueError("The only options for style are arpeggio and chord")
 
 nameArray = []
@@ -138,10 +155,10 @@ for q, j in zip(nameArray, range(24,109)):
 		MyMIDI = MIDIFile(1)  # One track
 		MyMIDI.addTempo(track, time, tempo)
 
-		if style == "arpeggio":
+		if style == "arpeggios":
 			for i, pitch in enumerate(degrees):
 				MyMIDI.addNote(track, channel, pitch, time+i, duration, volume) #time + i for arpeggios
-		elif style == "chord":
+		elif style == "chords":
 			for i, pitch in enumerate(degrees):
 				MyMIDI.addNote(track, channel, pitch, time, duration, volume) #time + i for arpeggios
 		

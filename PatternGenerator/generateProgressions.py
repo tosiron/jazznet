@@ -6,6 +6,14 @@ from midiutil import MIDIFile
 import os
 import sys
 from pathlib import Path
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-p', '--progression', required=True, help="Distances of successive pitches")
+parser.add_argument('-n', '--name', required=True, help="Short descriptive name, e.g., ionian. No spaces.")
+
+args = parser.parse_args()
 
 style = "progressions" #chords, arpeggios, scales
 #chords, arpeggios
@@ -15,16 +23,12 @@ octaveArray = [1, 2, 3, 4, 5, 6, 7, 8]
 
 alterationsArr = ["7", "7b5", "7#5", "maj7", "maj7b5", "maj7#5"]
 #check arguments
-if len(sys.argv) < 3:
-	raise ValueError("Too few arguments are provided. You must specify the progression to generate.\nThe format is: generateProgressions.py <progression> <name>")
-elif len(sys.argv) > 3:
-	raise ValueError("Too many arguments are provided.")
 
-progChords = sys.argv[1].split('-')
+progChords = args.progression.split("-")
 
 if((len(progChords) != 3) and (len(progChords) != 4)):
 	raise ValueError("Only 3- and 4-chord progressions are currently supported.")
-progressionName = sys.argv[-1]
+progressionName = args.name
 
 inversion = 0
 
