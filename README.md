@@ -9,7 +9,7 @@
  * [What can you do with the data?](#what-can-you-do-with-the-data)
  * [Download the data](download)
  * [Listen to samples](https://tosiron.com/jazznet/)
- * [Generate new patterns](Pattern%20Generator)
+ * [Generate new patterns](PatternGenerator)
  * [Citing jazzNet](#citing-jazznet)
  * [Contact](#contact)
  </details>
@@ -48,7 +48,7 @@ Listen to a few samples [here.](https://tosiron.com/jazznet/)
 ### Generate new patterns
 Python scripts are provided to enable you to extend the dataset by generating numerous new patterns. 
 
-Details can be found in the [Pattern Generator folder](Pattern%20Generator).
+Details can be found in the [Pattern Generator folder](PatternGenerator).
 
 ### Citing jazznet
 If you use the jazznet dataset in your work, please cite it as follows:
