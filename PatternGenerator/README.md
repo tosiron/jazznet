@@ -10,7 +10,7 @@ pip install MIDIUtil
 
 ### Generate chords and arpeggios
 
-Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `--length` (`-t`), `--offset` (`-o`), `--type` (`-t`), and `--name` (`-n) arguments must be provided. For help, use argument `--help`
+Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `--length` (`-t`), `--offset` (`-o`), `--type` (`-t`), and `--name` (`-n) must be provided as arguments.
 
 --length: `dyad`, `triad`, or `tetrad`. 
 
@@ -28,7 +28,7 @@ python generateChords.py -l tetrad -o "3 3 4" -t arpeggio -n min7b5
 
 ### Generate scales
 
-Scales can be generated using the [`generateScales.py`](generateScales.py) file. The `--offset` (`-o`) and `name` (`-n`) must be provided as arguments.
+Scales can be generated using the [`generateScales.py`](generateScales.py) file. The `--offset` (`-o`) and `--name` (`-n`) must be provided as arguments.
 
 --offset: The distance from one note to each subsequent note (the root note is implied). For instance, the major/Ionian scale has offsets: `2 2 1 2 2 2`.
 
