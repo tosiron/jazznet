@@ -10,46 +10,46 @@ pip install MIDIUtil
 
 ### Generate chords and arpeggios
 
-Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `length`, `offset`, `type`, and `name` must be provided as arguments.
+Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `--length` (`-t`), `--offset` (`-o`), `--type` (`-t`), and `--name` (`-n) arguments must be provided. For help, use argument `--help`
 
-Length: `dyad`, `triad`, or `tetrad`. 
+--length: `dyad`, `triad`, or `tetrad`. 
 
-Offset: Offsets are the pitch distances (in semitones) from one note to each subsequent note (the root note is implied). Thus, dyads (2-note chords) require 1 offset, triads (3-note chords) require 2, and tetrads (4-note chords) require 3. For example, for a major chord, the offsets are `4 3`. For a major 7th chord, the offsets are `4 3 4`.
+--offset: Offsets are the pitch distances (in semitones) from one note to each subsequent note (the root note is implied). Thus, dyads (2-note chords) require 1 offset, triads (3-note chords) require 2, and tetrads (4-note chords) require 3. For example, for a major chord, the offsets are `"4 3"`. For a major 7th chord, the offsets are `"4 3 4"`. Note that multiple offsets must be placed in quotes ("").
 
-Type: `chord` or `arpeggio`.
+--type: `chords` or `arpeggios`.
 
-Name: A short descriptive name must be provided (e.g., `maj` or `min7b5`)
+--name: A short descriptive name must be provided (e.g., `maj` or `min7b5`)
 
 **Example**: Generate the min7b5 arpeggio in all keys and in all inversions.
 
 ``
-python generateChords.py tetrad 3 3 4 arpeggio min7b5
+python generateChords.py -l tetrad -o "3 3 4" -t arpeggio -n min7b5
 ``
 
 ### Generate scales
 
-Scales can be generated using the [`generateScales.py`](generateScales.py) file. The `offset` and `name` must be provided as arguments.
+Scales can be generated using the [`generateScales.py`](generateScales.py) file. The `--offset` (`-o`) and `name` (`-n`) must be provided as arguments.
 
-Offset: The distance from one note to each subsequent note (the root note is implied). For instance, the major/Ionian scale has offsets: `2 2 1 2 2 2`.
+--offset: The distance from one note to each subsequent note (the root note is implied). For instance, the major/Ionian scale has offsets: `2 2 1 2 2 2`.
 
-Name: A short descriptive name.
+--name: A short descriptive name.
 
 **Example**: Generate the Ionian mode in all keys
 
 ``
-python generateScales.py 2 2 1 2 2 2 ionian
+python generateScales.py -o "2 2 1 2 2 2" -n ionian
 ``
 
 ### Generate progressions
 
 Progressions can be generated using the [`generateProgressions.py`](generateProgressions.py) file. Roman numerals (I/i to VII/vii) must be used to specify the chords separated by '-' (dash). Without any extentions/alterations, basic triads are generated. Chords can also be extended or altered by specifying a supported alteration (see table below) separated by a comma between the chord and the alteration. If using the `#` (sharp) or `b` (flat) alteration, they must follow the chord. Note that only 3- and 4-chord progressions are currently supported.
 
-A short descriptive name must also be provided as the final argument.
+The `--progression` (`-p`) and `--name` (`-n) must be provided as arguments.
 
 **Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7, named "ii-V-I".
 
 ``
-python generateProgressions.py ii,7b5-V-I,maj7 ii-V-I
+python generateProgressions.py -p ii,7b5-V-I,maj7 -n ii-V-I
 ``
 
 The table below shows the currently supported extensions/alterations.
