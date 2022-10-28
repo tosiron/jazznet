@@ -1,4 +1,4 @@
-### [Metadata](metadata)
+### [Metadata](../metadata)
 * [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
 
 ### MIDI files
