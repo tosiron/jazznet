@@ -14,7 +14,7 @@
  * [Contact](#contact)
  </details>
 
-The jazznet dataset is a dataset containing 162520 labeled piano patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. This results in ~95GB and more than 26K hours of audio. The patterns are guided by the jazz piano genre, but encompass other genre, like country, pop, blues, etc. 
+The jazznet dataset is a dataset containing 162520 labeled piano patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. This results in ~95GB and more than 26K hours of audio. The patterns are guided by the jazz piano genre, but encompass other genres, like country, pop, blues, etc. 
 
 The figure below depicts the taxonomy of the dataset. 
 
