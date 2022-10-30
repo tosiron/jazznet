@@ -10,7 +10,7 @@
  * [Download the data](download)
  * [Listen to samples](https://tosiron.com/jazznet/)
  * [Generate new data](PatternGenerator)
- * [Citing jazzNet](#citing-jazznet)
+ * [Citing jazznet](#citing-jazznet)
  * [Contact](#contact)
  </details>
 
