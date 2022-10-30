@@ -3,6 +3,7 @@
 
 ### MIDI files
 * [All patterns](https://uweb.engr.arizona.edu/~tosiron/jazznet/midi.tar.gz) (2.5MB)
+  * If the WAV files are too much to download (e.g., due to network bandwidth issues), you could also download the MIDI files and use the provided script to convert the MIDI files to WAV. You may need to modify the script to include the path to the MIDI files. The script creates WAV directories in the same structure as the MIDI directories. You would need to install Timidity via `pip install timidity`.
 
 ### WAV files
 
