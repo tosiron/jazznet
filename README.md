@@ -9,12 +9,12 @@
  * [What can you do with the data?](#what-can-you-do-with-the-data)
  * [Download the data](download)
  * [Listen to samples](https://tosiron.com/jazznet/)
- * [Generate new patterns](PatternGenerator)
+ * [Generate new data](PatternGenerator)
  * [Citing jazzNet](#citing-jazznet)
  * [Contact](#contact)
  </details>
 
-The jazznet dataset is a dataset containing 162520 labeled piano patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. This results in ~95GB and more than 26K hours of audio. The patterns are guided by the jazz piano genre, but encompass other genres, like country, pop, blues, etc. 
+The jazznet dataset is an extensible dataset containing 162520 labeled piano patterns: chords, arpeggios, scales, and chord progressions, and their inversions in all keys of the 88-key piano. This results in ~95GB and more than 26K hours of audio. The patterns are guided by the jazz piano genre, but encompass other genres, like country, pop, blues, etc. You can use the dataset as is or easily [generate new data](PatternGenerator) using the provided piano pattern generator.
 
 The figure below depicts the taxonomy of the dataset. 
 
@@ -49,7 +49,7 @@ Details on how to download the data can be found [here](download).
 
 Listen to a few samples [here.](https://tosiron.com/jazznet/)
 
-### Generate new patterns
+### Generate new data
 Python scripts are provided to enable you to extend the dataset by generating numerous new patterns. 
 
 Details can be found in the [Pattern Generator folder](PatternGenerator).
