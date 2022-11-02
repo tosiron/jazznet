@@ -1,8 +1,8 @@
 ### [Metadata](../metadata)
-* [All labels](https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz) (2MB)
+* [All labels](https://zenodo.org/record/7192653/files/metadata.tar.gz?download=1) (2MB)
 
 ### MIDI files
-* [All patterns](https://uweb.engr.arizona.edu/~tosiron/jazznet/midi.tar.gz) (2.5MB)
+* [All patterns](https://zenodo.org/record/7192653/files/midi.tar.gz?download=1) (2.5MB)
   * If the WAV files are too much to download (e.g., due to network bandwidth issues), you could just download the MIDI files and use the [provided script](convertMidiToWav.py) to convert the MIDI files to WAV. You may need to modify the script to include the path to the MIDI files. The script creates WAV directories in the same structure as the MIDI directories. You would need to install Timidity via `pip install timidity`.
 
 ### WAV files
@@ -26,12 +26,12 @@ If no subset or anything but `small`, `medium`, or `large` is specified, the ful
 
 Alternatively, you may manually download the files below. Chords, arpeggios, and scales are part of all subsets. 
 
-* [Chords](https://uweb.engr.arizona.edu/~tosiron/jazznet/chords.tar.gz) (380MB/1GB)
-* [Arpeggios](https://uweb.engr.arizona.edu/~tosiron/jazznet/arpeggios.tar.gz) (768MB/1.7GB)
-* [Scales](https://uweb.engr.arizona.edu/~tosiron/jazznet/scales.tar.gz) (3.4GB/6.3GB)
-* [Progressions](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions.tar.gz) (48.8GB/86GB)
+* [Chords](https://zenodo.org/record/7192653/files/chords.tar.gz?download=1) (390MB/1GB)
+* [Arpeggios](https://zenodo.org/record/7192653/files/arpeggios.tar.gz?download=1) (787MB/1.7GB)
+* [Scales](https://zenodo.org/record/7192653/files/scales.tar.gz?download=1) (3.4GB/6.3GB)
+* [Progressions](https://zenodo.org/record/7192653/files/progressions.tar.gz?download=1) (47.4GB/86GB)
 
 Progressions subsets:
-* [Progressions-small](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-small.tar.gz) (1.9GB/3.4GB)
-* [Progressions-medium](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-medium.tar.gz) (4.6GBGB/8.7GB)
-* [Progressions-large](https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-large.tar.gz) (11.6GB/21.4GB)
+* [Progressions-small](https://zenodo.org/record/7192653/files/progressions-small.tar.gz?download=1) (1.9GB/3.4GB)
+* [Progressions-medium](https://zenodo.org/record/7192653/files/progressions-medium.tar.gz?download=1) (4.7GB/8.7GB)
+* [Progressions-large](https://zenodo.org/record/7192653/files/progressions-large.tar.gz?download=1) (11.8GB/21.4GB)
