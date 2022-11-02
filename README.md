@@ -1,4 +1,4 @@
-# jazznet Dataset
+# jazznet Dataset [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7192653.svg)](https://doi.org/10.5281/zenodo.7192653)
 ![image](https://user-images.githubusercontent.com/16122125/184457848-15a2bb14-e5b1-4cef-a7f3-64e93792dd31.png)
 
 <details>
