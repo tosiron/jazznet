@@ -60,7 +60,7 @@ If you use the jazznet dataset in your work, please cite it as follows:
 ```
 @online{adegbija22,
  author = {Tosiron Adegbija},
- title  = {jazznet: A Dataset of Fundamental Piano Patterns for Music Audio Machine Learning Research},
+ title  = {The jazznet Dataset of Piano Patterns for Music Audio Machine Learning Research},
  year   = {2022}
 }
 ```
