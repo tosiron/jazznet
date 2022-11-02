@@ -10,32 +10,32 @@ import sys
 from pathlib import Path
 
 if sys.argv[1] == "small":
-    urls = ["https://uweb.engr.arizona.edu/~tosiron/jazznet/arpeggios.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/chords.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/scales.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-small.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz"]
+    urls = ["https://zenodo.org/record/7192653/files/arpeggios.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/chords.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/scales.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/progressions-small.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/metadata.tar.gz?download=1"]
 
 elif sys.argv[1] == "medium":
-    urls = ["https://uweb.engr.arizona.edu/~tosiron/jazznet/arpeggios.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/chords.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/scales.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-medium.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz"]
+    urls = ["https://zenodo.org/record/7192653/files/arpeggios.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/chords.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/scales.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/progressions-medium.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/metadata.tar.gz?download=1"]
 
 elif sys.argv[1] == "large":
-    urls = ["https://uweb.engr.arizona.edu/~tosiron/jazznet/arpeggios.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/chords.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/scales.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions-large.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz"]
+    urls = ["https://zenodo.org/record/7192653/files/arpeggios.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/chords.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/scales.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/progressions-large.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/metadata.tar.gz?download=1"]
 
 else:
-    urls = ["https://uweb.engr.arizona.edu/~tosiron/jazznet/arpeggios.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/chords.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/scales.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/progressions.tar.gz",
-        "https://uweb.engr.arizona.edu/~tosiron/jazznet/metadata.tar.gz"]
+    urls = ["https://zenodo.org/record/7192653/files/arpeggios.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/chords.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/scales.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/progressions.tar.gz?download=1",
+        "https://zenodo.org/record/7192653/files/metadata.tar.gz?download=1"]
 
 def urlsToDownload(url):
     try:
