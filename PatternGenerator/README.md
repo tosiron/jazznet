@@ -12,7 +12,7 @@ pip install MIDIUtil
 
 ### Generate chords and arpeggios
 
-Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `--length` (`-t`), `--offset` (`-o`), `--type` (`-t`), and `--name` (`-n) must be provided as arguments.
+Chords and arpeggios can be generated using the [`generateChords.py`](generateChords.py) file. The `--length` (`-t`), `--offset` (`-o`), `--type` (`-t`), and `--name` (`-n`) must be provided as arguments.
 
 --length: `dyad`, `triad`, or `tetrad`. 
 
