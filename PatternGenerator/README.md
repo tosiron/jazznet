@@ -36,7 +36,7 @@ Scales can be generated using the [`generateScales.py`](generateScales.py) file.
 
 --name: A short descriptive name.
 
-**Example**: Generate the Ionian mode in all keys
+**Example**: Generate the Ionian mode in all keys and in all inversions
 
 ``
 python generateScales.py -o "2 2 1 2 2 2" -n ionian
@@ -48,7 +48,7 @@ Progressions can be generated using the [`generateProgressions.py`](generateProg
 
 The `--progression` (`-p`) and `--name` (`-n`) must be provided as arguments.
 
-**Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7, named "ii-V-I".
+**Example** Generate the 2-5-1 progression with the 2 altered by the 7 flat 5 (i.e., min7b5) and the 1 as a major 7, named "ii-V-I". The progression will be generated in all possible combinations of chords (10s of 1000s of patterns).
 
 ``
 python generateProgressions.py -p ii,7b5-V-I,maj7 -n ii-V-I
