@@ -43,7 +43,7 @@ I imagine it would be an excellent dataset for a variety of challenging ML tasks
 
 ## Download the data
 
-Details on how to download the data can be found [here](download).
+Details on how to download the data can be found [here](download). Thanks to the kind people at [Zenodo](https://zenodo.org/) for hosting the dataset!
 
 ### Samples
 
