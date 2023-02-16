@@ -59,9 +59,11 @@ If you use the jazznet dataset in your work, please cite it as follows:
 
 ```
 @online{adegbija22,
+ title  = {jazznet: A Dataset of Fundamental Piano Patterns for Music Audio Machine Learning Research},
  author = {Tosiron Adegbija},
- title  = {The jazznet Dataset of Piano Patterns for Music Audio Machine Learning Research},
- year   = {2022}
+ year   = {2023},
+ booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
+ organization = {IEEE}
 }
 ```
 ### Contact
