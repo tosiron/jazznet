@@ -1,6 +1,8 @@
 # jazznet Dataset [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7192653.svg)](https://doi.org/10.5281/zenodo.7192653)
 ![image](https://user-images.githubusercontent.com/16122125/184457848-15a2bb14-e5b1-4cef-a7f3-64e93792dd31.png)
 
+The paper describing the jazznet dataset will appear at ICASSP 2023. [Read the preprint](https://tosiron.com/papers/2023/jazznet_dataset_ICASSP23.pdf).
+
 <details>
  <summary>Table of contents</summary>
  
@@ -39,7 +41,7 @@ There is a bit of [background music theory](musicBackground.md) necessary for un
 The dataset is automatically generated using what I call _distance-based pattern structures (DBPS)_. DBPS describes the structure of each musical pattern based on the distance between successive pitches within the pattern. This approach enables the data to be automatically [generated](PatternGenerator) in all keys of the piano using symbolic MIDI representation, where the distance between two adjacent pitches is 1 (i.e., a _semitone_). For example, the major triad, with _note0, note1_, and _note2_ can be represented using the structure `[4 3]`, meaning _note1_ is 4 pitches from _note0_, and _note2_ is 3 pitches from _note2_. This holds in all keys of the piano. Similarly, the chords within progressions [can be described](musicBackground.md) using the Roman numerals and generated based on the DBPS approach. 
 
 ## What can you do with the data?
-I imagine it would be an excellent dataset for a variety of challenging ML tasks. The basic tasks include *machine music understanding*, e.g., is some input a chord, scale, or arpeggio. These would be relatively easy for a ML model. More challenging tasks within machine music understanding would be identifying what _kinds_ of patterns are present; e.g., is it an augumented or diminished chord, or what progression is it? Other possible tasks include things like *automatic music transcription* (related to music understanding); develop *music recommender systems* based on the kinds of musical patterns a listener likes (someone who likes a Taylor Swift song might like other songs with only four chords: I, IV, V, VI); *understand and generate music* based on the patterns in the dataset (e.g., learn what arpeggios/scales are played over what chords/progressions). And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
+I imagine it would be an excellent dataset for a variety of challenging ML tasks. The basic tasks include *machine music understanding*, e.g., is some input a chord, scale, or arpeggio. These would be relatively easy for a ML model. More challenging tasks within machine music understanding would be identifying what _kinds_ of patterns are present; e.g., is it an augumented or diminished chord, or what progression is it? Other possible tasks include things like *automatic music transcription* (related to music understanding); develop *music recommendation systems* based on the kinds of musical patterns a listener likes (someone who likes a Taylor Swift song might like other songs with only four chords: I, IV, V, VI); *understand and generate music* based on the patterns in the dataset (e.g., learn what arpeggios/scales are played over what chords/progressions). And probably a bunch of other interesting things. You can also test your image recognition models on spectrograms generated from the music in the dataset.
 
 ## Download the data
 
@@ -58,7 +60,7 @@ Details can be found in the [Pattern Generator folder](PatternGenerator).
 If you use the jazznet dataset in your work, please cite it as follows:
 
 ```
-@online{adegbija22,
+@online{adegbija23_jazznet,
  title  = {jazznet: A Dataset of Fundamental Piano Patterns for Music Audio Machine Learning Research},
  author = {Tosiron Adegbija},
  year   = {2023},
