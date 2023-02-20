@@ -1,7 +1,7 @@
 # jazznet Dataset [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7192653.svg)](https://doi.org/10.5281/zenodo.7192653)
 ![image](https://user-images.githubusercontent.com/16122125/184457848-15a2bb14-e5b1-4cef-a7f3-64e93792dd31.png)
 
-The paper describing the jazznet dataset will appear at ICASSP 2023. [Read the preprint](https://tosiron.com/papers/2023/jazznet_dataset_ICASSP23.pdf).
+The paper describing the jazznet dataset will appear at ICASSP 2023. [Read the preprint](https://arxiv.org/pdf/2302.08632.pdf).
 
 <details>
  <summary>Table of contents</summary>
