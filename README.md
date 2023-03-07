@@ -72,7 +72,7 @@ If you use the jazznet dataset in your work, please cite it as follows:
 If you have any questions, comments, or just want to say hi, feel free to email me ([Tosi](https://tosiron.com)): tosiron[at]arizona.edu.
 
 ### License
-The project is licensed under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The project is licensed under the [MIT license](LICENSE.md).
 
 
 
