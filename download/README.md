@@ -1,4 +1,4 @@
-The dataset is hosted at [Zenodo](https://zenodo.org/deposit/7192653). Download details and direct links are below.
+The dataset is hosted at [Zenodo](https://zenodo.org/record/7192653). Download details and direct links are below.
 
 ### Metadata
 * [All labels](https://zenodo.org/record/7192653/files/metadata.tar.gz?download=1) (2MB)
